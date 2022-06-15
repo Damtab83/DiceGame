@@ -1,0 +1,75 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.col, .row {
+  border: 2px solid black;
+}
+.container-fluid {
+  background-color: green;
+  margin: 10px;
+  height: 100vh;
+  width: 100%;
+}
+.row {
+  background-color: orange;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+.currentScoreP2 {
+  height: 25vh;
+  width: 25vw;
+  background-color: red;
+  margin: 0 auto;
+}
+.currentScoreP1 {
+  height: 25vh;
+  width: 25vw;
+  background-color: red;
+  margin: 0 auto;
+}
+img {
+  height: auto;
+  width: 25vw;
+  max-width: 150px;
+  margin: auto;
+}
+.de1 {
+  display: block;
+}
+.de2 {
+  display: none;
+}
+.de3 {
+  display: none;
+}
+.de4 {
+  display: none;
+}
+.de5 {
+  display: none;
+}
+.de6 {
+  display: none;
+}
+
+/* Show and Hide Dice*/
+.showDice {
+  display: block;
+}
+.hiddenDice {
+  display: none;
+}
+
+
+#scoreP1 {
+  background-color: blue;
+  width: 25vw;
+  margin: 0 auto;
+}
+#scoreP2 {
+  background-color: blue;
+  width: 25vw;
+  margin: 0 auto;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <title>Jeu de Dés</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <!-- Button New Game -->
+      <div class="row">
+        <div class="col-12 text-center">
+          <button id="newGame" class="border-4"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--mdi" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#1b1818" d="M12 20c-4.41 0-8-3.59-8-8s3.59-8 8-8s8 3.59 8 8s-3.59 8-8 8m0-18A10 10 0 0 0 2 12a10 10 0 0 0 10 10a10 10 0 0 0 10-10A10 10 0 0 0 12 2m1 5h-2v4H7v2h4v4h2v-4h4v-2h-4V7Z"></path></svg><br>New Game</button>
+        </div>
+      </div>
+
+        <!-- Fields Players -->
+      <div class="row">
+            <div class="col-6 text-center fs-1 fw-bold"><p>Joueur 1</p><input type="radio" name="showPlayer" checked></div>
+            <div class="col-6 text-center fs-1 fw-bold"><p>Joueur 2</p><input type="radio" name="showPlayer"></div>
+      </div>
+
+      <!-- Scores and Dice -->
+      <div class="row">
+        <div class="col-4 text-center"><p id="scoreP1"></p>0</div>
+        <div class="col-4 text-center"><p id="dice">
+          <img src="imagesForDice/de1.jpg" alt="Dé 1" class="de1">
+          <img src="imagesForDice/de2.jpg" alt="Dé 2" class="de2">
+          <img src="imagesForDice/de3.png" alt="Dé 3" class="de3">
+          <img src="imagesForDice/de4.jpg" alt="Dé 4" class="de4">
+          <img src="imagesForDice/de5.jpg" alt="Dé 5" class="de5">
+          <img src="imagesForDice/de6.png" alt="Dé 6" class="de6">
+          Dice</p></div>
+        <div class="col-4 text-center"><p id="scoreP2"></p>0 </div>
+      </div>
+
+      <!-- Current Score, Roll Dice and Hold-->
+      <div class="row">
+        <div class="col-4 text-center" id="currentScoreP1">
+          <div class="currentScoreP1">
+            <p>Current Score 1</p>
+          </div>
+          
+        </div>
+        <div class="col-4 text-center">
+          <div class="col"><button id="rollDice" class="border-4">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--ic" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24"><path fill="#1b1818" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10s10-4.48 10-10S17.52 2 12 2zm6 10.5c0 3.31-2.69 6-6 6s-6-2.69-6-6h2c0 2.21 1.79 4 4 4s4-1.79 4-4s-1.79-4-4-4v3l-4-4l4-4v3c3.31 0 6 2.69 6 6z"></path></svg><br>ROLL DICE</button>
+          </div>
+          <div class="col"><button id="hold" class="border-4">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--bi" width="32" height="32" preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16"><g fill="#1b1818"><path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"></path><path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"></path></g></svg><br>
+          HOLD</button>
+          </div>
+        </div>
+        <div class="col-4 text-center" id="currentScoreP2">
+          <div class="currentScoreP2">
+            <p>Current Score 2</p>
+          </div>
+          
+        </div>
+      </div>
+
+
+  </div>  
+  <script src="JS/app.js"></script>
+</body>
+</html>
